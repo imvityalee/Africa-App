@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18FC48926954ABF007B8301 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18FC48826954ABF007B8301 /* AnimalListItemView.swift */; };
+		B18FC48B26954C05007B8301 /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18FC48A26954C05007B8301 /* AnimalsModel.swift */; };
 		B1974118269421AB00A453E5 /* Africa_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1974117269421AB00A453E5 /* Africa_AppApp.swift */; };
 		B197411A269421AB00A453E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1974119269421AB00A453E5 /* ContentView.swift */; };
 		B197411C269421AF00A453E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B197411B269421AF00A453E5 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B18FC48826954ABF007B8301 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		B18FC48A26954C05007B8301 /* AnimalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
 		B1974114269421AB00A453E5 /* Africa-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Africa-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1974117269421AB00A453E5 /* Africa_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Africa_AppApp.swift; sourceTree = "<group>"; };
 		B1974119269421AB00A453E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				B197415F26942BDC00A453E5 /* CoverImageView.swift */,
+				B18FC48826954ABF007B8301 /* AnimalListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				B197416226942E4A00A453E5 /* CoverImageModel.swift */,
+				B18FC48A26954C05007B8301 /* AnimalsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,10 +286,12 @@
 				B197411A269421AB00A453E5 /* ContentView.swift in Sources */,
 				B1974158269425D700A453E5 /* MainView.swift in Sources */,
 				B197415D2694266600A453E5 /* LocalazibleImages.swift in Sources */,
+				B18FC48926954ABF007B8301 /* AnimalListItemView.swift in Sources */,
 				B1974154269425A800A453E5 /* MapView.swift in Sources */,
 				B19741662694301400A453E5 /* CodableBundleExtension .swift in Sources */,
 				B197416026942BDC00A453E5 /* CoverImageView.swift in Sources */,
 				B197416326942E4A00A453E5 /* CoverImageModel.swift in Sources */,
+				B18FC48B26954C05007B8301 /* AnimalsModel.swift in Sources */,
 				B1974118269421AB00A453E5 /* Africa_AppApp.swift in Sources */,
 				B19741522694259D00A453E5 /* VideoListView.swift in Sources */,
 				B1974156269425C400A453E5 /* GalleryView.swift in Sources */,
