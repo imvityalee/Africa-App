@@ -19,19 +19,19 @@ struct MainView: View {
       VideoListView()
         .tabItem {
           Image(systemName: "play.rectangle")
-          Text("Watch")
+            Text(LocalazibleStrings.watch)
         }
       
       MapView()
         .tabItem {
           Image(systemName: "map")
-          Text("Locations")
+            Text(LocalazibleStrings.locations)
         }
       
       GalleryView()
         .tabItem {
           Image(systemName: "photo")
-          Text("Gallery")
+            Text(LocalazibleStrings.gallery)
         }
     } //: TAB
   }

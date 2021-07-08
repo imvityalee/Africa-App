@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let animalsModel: [AnimalsModel] = Bundle.main.decode("animals.json")
+    let animalsModel: [AnimalsModel] = Bundle.main.decode(LocalazibleStrings.animalsJson)
     
     var body: some View {
         NavigationView {
@@ -17,12 +17,18 @@ struct ContentView: View {
                 CoverImageView()
                     .frame(height: 300, alignment: .center)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                ForEach(animalsModel) {
-                    AnimalListItemView(animalModel: $0)
+                ForEach(animalsModel) { animal in
+                    NavigationLink(destination: AnimalDetailView(animalsModel: animal)) {
+                        AnimalListItemView(animalModel: animal)
+                    }
+                                        
                 }
+                
+                
             }
-            navigationBarTitle("Africa", displayMode: .large)
+            .navigationBarTitle(LocalazibleStrings.africa, displayMode: .large)
         }
+        
     }
 }
 
