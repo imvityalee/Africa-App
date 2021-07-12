@@ -15,4 +15,5 @@ struct LocalazibleImages {
     static var map: String = "map"
     static var mappin_circle: String = "mappin.circle"
     static var arrow_up_right: String = "arrow.up.right.square"
+    static var play_circle: String = "play.circle"
 }

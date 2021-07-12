@@ -17,4 +17,5 @@ struct LocalazibleStrings {
     static var wildeerness_in_pictures: String = "Wildeerness in  Pictures"
     static var did_you_know: String = "Did you know?"
     static var national_parks: String = "National Parks"
+    static var animalVideoJson: String = "videos.json"
 }
