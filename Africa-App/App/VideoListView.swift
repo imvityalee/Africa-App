@@ -16,8 +16,13 @@ struct VideoListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(videoModel) {
-                    VideoListItemView(videoModel: $0)
+                ForEach(videoModel) { item in
+                    NavigationLink(
+                        destination:
+                            VideoPlayerView(videoSelected: item.id,
+                                            videoTitle: item.name))  {
+                        VideoListItemView(videoModel: item)
+                    }
                 }
             }
             .listStyle(InsetGroupedListStyle())
