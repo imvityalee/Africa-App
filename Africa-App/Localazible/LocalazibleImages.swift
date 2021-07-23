@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocalazibleImages {
+public struct LocalazibleImages {
     static var squareImage: String = "square.grid.2x2"
     static var rectangledPhoto: String = "photo.on.rectangle.angled"
     static var questionMarkCircle: String = "questionmark.circle"
@@ -16,4 +16,5 @@ struct LocalazibleImages {
     static var mappin_circle: String = "mappin.circle"
     static var arrow_up_right: String = "arrow.up.right.square"
     static var play_circle: String = "play.circle"
+    static var arrow_2: String = "arrow.2.squarepath"
 }

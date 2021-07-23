@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocalazibleStrings {
+public struct LocalazibleStrings {
     static var browse: String = "Browse"
     static var animalsJson: String = "animals.json"
     static var africa: String = "Africa"
@@ -18,4 +18,6 @@ struct LocalazibleStrings {
     static var did_you_know: String = "Did you know?"
     static var national_parks: String = "National Parks"
     static var animalVideoJson: String = "videos.json"
+    static var videos: String  = "Videos"
+    static var lion: String = "lion"
 }

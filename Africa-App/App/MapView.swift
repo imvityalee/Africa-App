@@ -10,7 +10,8 @@ import MapKit
 
 struct MapView: View {
     
-    let locations: [LocationModel] = Bundle.main.decode("locations.json")
+    let locations: [LocationModel] =
+        Bundle.main.decode("locations.json")
 
     @State private var region: MKCoordinateRegion = {
         var mapCoordinates = CLLocationCoordinate2D(

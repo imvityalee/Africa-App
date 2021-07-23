@@ -9,12 +9,14 @@ import SwiftUI
 
 struct GalleryView: View {
 
-    @State private var selectedAnimal: String = "lion"
+    @State private var selectedAnimal: String = LocalazibleStrings.lion
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     @State private var gridColumn: Double = 3.0
     
-    let animals: [AnimalsModel] = Bundle.main.decode(LocalazibleStrings.animalsJson)
-    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    private let animals: [AnimalsModel] =
+        Bundle.main.decode(LocalazibleStrings.animalsJson)
+    private let haptics =
+        UIImpactFeedbackGenerator(style: .medium)
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {
@@ -24,20 +26,30 @@ struct GalleryView: View {
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 8))
-                Slider(value: $gridColumn, in: 2...4, step: 1)
+                    .overlay(Circle()
+                                .stroke(Color.white,
+                                        lineWidth: 8))
+                Slider(value: $gridColumn,
+                       in: 2...4,
+                       step: 1)
                     .padding(.horizontal)
-                    .onChange(of: gridColumn, perform: { value in
+                    .onChange(of: gridColumn,
+                              perform: { value in
                         gridSwitch()
                     })
                 
-                LazyVGrid(columns: gridLayout, alignment: .center, spacing: 5) {
+                LazyVGrid(columns: gridLayout,
+                          alignment: .center,
+                          spacing: 5) {
                     ForEach(animals) { item in
                         Image(item.image)
                             .resizable()
                             .scaledToFit()
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                            .overlay(Circle()
+                                        .stroke(Color.white,
+                                                lineWidth: 1)
+                            )
                             .onTapGesture {
                                 selectedAnimal = item.image
                                 haptics.impactOccurred()
@@ -67,6 +79,8 @@ struct GalleryView_Previews: PreviewProvider {
 
 extension GalleryView {
     private func gridSwitch() {
-        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+        gridLayout = Array(repeating:
+                            .init(.flexible()),
+                           count: Int(gridColumn))
     }
 }

@@ -26,14 +26,14 @@ struct VideoListView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationBarTitle("Videos", displayMode: .inline)
+            .navigationBarTitle(LocalazibleStrings.videos, displayMode: .inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                             videoModel.shuffle()
                             hapticImpact.impactOccurred()
                     }, label: {
-                        Image(systemName: "arrow.2.squarepath")
+                        Image(systemName: LocalazibleImages.arrow_2)
                     })
                 }
             }
