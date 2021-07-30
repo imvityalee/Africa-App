@@ -1,6 +1,6 @@
 # Africa-App
 Africa-App made developed SwiftUI with Multiplatform integration. Africa-App is build for practising on working with UI elements and animations in SwiftUI.
-## Technologies that were used while developing:
+## Technologies that were used while developing the project:
 - MapKit
 - AVkit
 - Combine
