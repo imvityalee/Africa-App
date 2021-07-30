@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimalGridItemView: View {
     
      let animal: AnimalsModel
-    
+     
     var body: some View {
         Image(animal.image)
             .resizable()

@@ -20,4 +20,10 @@ public struct LocalazibleStrings {
     static var animalVideoJson: String = "videos.json"
     static var videos: String  = "Videos"
     static var lion: String = "lion"
+    static var creditsInfo: String = """
+Copyright © Victor Lee
+All right reserved
+Better Apps ♡ Less Code
+"""
+
 }
